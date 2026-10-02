@@ -51,3 +51,26 @@
      outline: 3px solid #F59E0B;
      outline-offset: 3px;
  }
+
+ .estado {
+    padding: .6rem;
+    border-left: 4px solid;
+ }
+
+ .exito{
+    color: var(--exito);
+    border-left-color: var(--exito);
+ }
+
+ .error{
+    color: var(--error);
+    border-left-color: var(--error);
+ }
+
+ .exito::before {
+    content: "✓ ";
+}
+
+.error::before {
+    content: "X ";
+}
